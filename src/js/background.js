@@ -8,9 +8,9 @@ chrome.browserAction.onClicked.addListener(function (tab) {
   status.changeStatus();
 
   if (status.getStatus()) {
-    chrome.browserAction.setIcon({ path: "icon/favicon-32x32_on.png" });
+    chrome.browserAction.setIcon({ path: "../../icon/favicon-32x32_on.png" });
   } else {
-    chrome.browserAction.setIcon({ path: "icon/favicon-32x32_off.png" });
+    chrome.browserAction.setIcon({ path: "../../icon/favicon-32x32_off.png" });
   }
 
   let url = new URL(tab.url);

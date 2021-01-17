@@ -2,7 +2,7 @@
 
 Filtering out 3rd party seller's product on amazon search results. 
 
-Amazonの検索結果ページから3rd party販売元の商品を 除外します
+Amazonの検索結果ページから3rd party販売元の商品を除外します
 
 ## Overview
 

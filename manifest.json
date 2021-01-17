@@ -1,5 +1,5 @@
 {
-  "name": "Amazon market place filter",
+  "name": "Amazon 3rd party seller filter",
   "version": "1.0",
   "description": "Filtering out 3rd party seller's product on amazon search results. Amazonの検索結果ページから3rd party販売元の商品を除外します",
   "manifest_version": 2,

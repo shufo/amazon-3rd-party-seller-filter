@@ -7,7 +7,7 @@
     "page": "src/html/background.html"
   },
   "permissions": [
-    "tabs",
+    "activeTab",
     "*://*.amazon.com/*",
     "*://*.amazon.co.jp/*"
   ],

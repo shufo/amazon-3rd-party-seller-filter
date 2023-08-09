@@ -1,16 +1,16 @@
-import statusManager from "./status.js";
-import { queryParams } from "./params.js";
+import statusManager from "./src/js/status.js";
+import { queryParams } from "./src/js/params.js";
 
 const status = new statusManager(true);
 const filterKey = "p_6";
 
-chrome.browserAction.onClicked.addListener(function (tab) {
+chrome.action.onClicked.addListener(function (tab) {
   status.changeStatus();
 
   if (status.getStatus()) {
-    chrome.browserAction.setIcon({ path: "../../icon/favicon-32x32_on.png" });
+    chrome.action.setIcon({ path: "../../icon/favicon-32x32_on.png" });
   } else {
-    chrome.browserAction.setIcon({ path: "../../icon/favicon-32x32_off.png" });
+    chrome.action.setIcon({ path: "../../icon/favicon-32x32_off.png" });
   }
 
   let url = new URL(tab.url);
@@ -30,6 +30,11 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 });
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
+  if (status.getStatus()) {
+    chrome.action.setIcon({ path: "../../icon/favicon-32x32_on.png" });
+  } else {
+    chrome.action.setIcon({ path: "../../icon/favicon-32x32_off.png" });
+  }
   let url = new URL(tab.url);
   let filter = queryParams[url.hostname];
 
@@ -38,7 +43,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     url.searchParams.has("k") &&
     !url.searchParams.has("rh")
   ) {
-    url.searchParams.append("rh",  `${filterKey}:${filter.value}`);
+    url.searchParams.append("rh", `${filterKey}:${filter.value}`);
     chrome.tabs.update(tabId, { url: url.toString() });
   }
 });

@@ -31,7 +31,7 @@ chrome.action.onClicked.addListener(function (tab) {
   }
 });
 
-chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
+chrome.tabs.onUpdated.addListener(function (tabId, tab) {
   if (status.getStatus()) {
     chrome.action.setIcon({ path: "../../icon/favicon-32x32_on.png" });
   } else {

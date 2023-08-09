@@ -12,7 +12,9 @@ chrome.action.onClicked.addListener(function (tab) {
   } else {
     chrome.action.setIcon({ path: "../../icon/favicon-32x32_off.png" });
   }
-
+  if (tab.url === undefined) {
+    return;
+  }
   let url = new URL(tab.url);
   let filter = queryParams[url.hostname];
 
@@ -34,6 +36,9 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     chrome.action.setIcon({ path: "../../icon/favicon-32x32_on.png" });
   } else {
     chrome.action.setIcon({ path: "../../icon/favicon-32x32_off.png" });
+  }
+  if (tab.url === undefined) {
+    return;
   }
   let url = new URL(tab.url);
   let filter = queryParams[url.hostname];

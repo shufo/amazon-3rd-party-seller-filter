@@ -16,9 +16,17 @@ Works on Amazon:
 - JP
 - DE
 - FR
+- ES
+- IT
+- BE
+- NL
+- PL
+- SE
+- MX
+- BR
 
 ## Usage
 
 1. Navigate to one of the supported Amazon sites.
 2. The extension is active by default - start searching!.
-    1. Click the extension icon to disable it - the icon will then be greyed out.
+   1. Click the extension icon to disable it - the icon will then be greyed out.

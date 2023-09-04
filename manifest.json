@@ -1,6 +1,6 @@
 {
   "name": "Amazon 3rd party seller filter",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Filtering out 3rd party seller's product on Amazon search results.",
   "manifest_version": 3,
   "minimum_chrome_version": "92",

@@ -1,5 +1,5 @@
-import statusManager from "./src/js/status.js";
-import { queryParams } from "./src/js/params.js";
+import statusManager from "./status.js";
+import { queryParams } from "./params.js";
 
 const status = new statusManager(true);
 const filterKey = "p_6";

@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "minimum_chrome_version": "92",
   "background": {
-    "service_worker": "background.js",
+    "service_worker": "./src/js/background.js",
     "type": "module"
   },
   "host_permissions": [

@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Amazon 3rd party seller filter"
+  },
+  "appDesc": {
+    "message": "Filtrera bort produkter som säljs av tredjepartssäljare från Amazons sökresultat."
+  },
+  "appTitle": {
+    "message": "Amazon 3rd party seller filter - Visa endast produkter som säljs och levereras av Amazon själv"
+  }
+}

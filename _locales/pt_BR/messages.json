@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Amazon 3rd party seller filter"
+  },
+  "appDesc": {
+    "message": "Filtre os produtos vendidos por terceiros nos resultados de pesquisa da Amazon."
+  },
+  "appTitle": {
+    "message": "Amazon 3rd party seller filter - Mostrar apenas produtos vendidos e enviados pela própria Amazon"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Amazon 3rd party seller filter"
+  },
+  "appDesc": {
+    "message": "Amazonの検索結果から出荷/販売元がAmazon以外の商品を除外し、Amazon発送の商品のみ表示します"
+  },
+  "appTitle": {
+    "message": "Amazon 3rd party seller filter - Amazon発送の商品のみ表示"
+  }
+}

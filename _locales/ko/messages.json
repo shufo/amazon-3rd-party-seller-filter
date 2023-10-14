@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Amazon 3rd party seller filter"
+  },
+  "appDesc": {
+    "message": "아마존 검색 결과에서 타사 셀러가 판매하는 제품을 필터링합니다."
+  },
+  "appTitle": {
+    "message": "Amazon 3rd party seller filter - 아마존 자체에서 판매 및 배송한 상품만 표시합니다"
+  }
+}

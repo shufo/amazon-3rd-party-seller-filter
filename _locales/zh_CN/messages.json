@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Amazon 3rd party seller filter"
+  },
+  "appDesc": {
+    "message": "从亚马逊搜索结果中过滤掉第三方卖家销售的产品。"
+  },
+  "appTitle": {
+    "message": "Amazon 3rd party seller filter - 仅显示由亚马逊自行销售和发货的产品"
+  }
+}

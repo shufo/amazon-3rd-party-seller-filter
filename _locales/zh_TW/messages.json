@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Amazon 3rd party seller filter"
+  },
+  "appDesc": {
+    "message": "從亞馬遜搜尋結果中過濾掉第三方賣家銷售的產品"
+  },
+  "appTitle": {
+    "message": "Amazon 3rd party seller filter - 僅顯示亞馬遜自行銷售和運送的產品"
+  }
+}

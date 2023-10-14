@@ -1,7 +1,7 @@
 {
-  "name": "Amazon 3rd party seller filter",
+  "name": "__MSG_appName__",
   "version": "1.2",
-  "description": "Filtering out 3rd party seller's product on Amazon search results.",
+  "description": "__MSG_appDesc__",
   "manifest_version": 3,
   "minimum_chrome_version": "92",
   "background": {
@@ -26,7 +26,7 @@
   ],
   "action": {
     "default_icon": "icon/favicon-32x32_off.png",
-    "default_title": "Amazon 3rd party seller filter"
+    "default_title": "__MSG_appTitle__"
   },
   "icons": {
     "16": "icon/favicon-16x16.png",

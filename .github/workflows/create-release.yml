@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - main
+name: create-release
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v3
+        id: release
+        with:
+          release-type: simple
+          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false}]'

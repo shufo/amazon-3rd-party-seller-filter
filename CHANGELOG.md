@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.3.0...v1.4.0) (2024-01-23)
+
+
+### Features
+
+* 🎸 support for TR, AU and AE ([7524533](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/75245338f25b13f23161d1c4bd909ded4db0d73a))
+
 ## 1.3.0 (2023-10-14)
 
 

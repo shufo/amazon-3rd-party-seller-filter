@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.0...v1.4.1) (2024-01-23)
+
+
+### Miscellaneous
+
+* 🤖 add locale for tr and ar ([dd36ee0](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/dd36ee06687f5ccf20f9046a98669d32e847f3de))
+
 ## [1.4.0](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.3.0...v1.4.0) (2024-01-23)
 
 

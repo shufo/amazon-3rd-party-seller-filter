@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Amazon 3rd party seller filter"
+  },
+  "appDesc": {
+    "message": "قم بتصفية المنتجات التي يبيعها بائعون خارجيون من نتائج بحث أمازون"
+  },
+  "appTitle": {
+    "message": "Amazon 3rd party seller filter - اعرض فقط المنتجات التي يتم بيعها وشحنها بواسطة أمازون نفسها"
+  }
+}

@@ -24,6 +24,9 @@ Works on Amazon:
 - SE
 - MX
 - BR
+- TR
+- AU
+- AE
 
 ## Usage
 

@@ -41,4 +41,13 @@ export const queryParams = {
   "www.amazon.com.br": {
     value: "A1ZZFT5FULY4LN",
   },
+  "www.amazon.com.tr": {
+    value: "A1UNQM1SR2CHM",
+  },
+  "www.amazon.com.au": {
+    value: "ANEGB3WVEVKZB",
+  },
+  "www.amazon.ae": {
+    value: "A2KKU8J8O8784X",
+  },
 };

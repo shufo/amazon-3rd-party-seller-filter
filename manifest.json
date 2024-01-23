@@ -23,7 +23,10 @@
     "*://*.amazon.pl/*",
     "*://*.amazon.se/*",
     "*://*.amazon.com.mx/*",
-    "*://*.amazon.com.br/*"
+    "*://*.amazon.com.br/*",
+    "*://*.amazon.com.tr/*",
+    "*://*.amazon.com.au/*",
+    "*://*.amazon.ae/*"
   ],
   "action": {
     "default_icon": "icon/favicon-32x32_off.png",

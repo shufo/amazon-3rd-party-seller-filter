@@ -47,6 +47,11 @@ see: [Load an unpacked extension](https://developer.chrome.com/docs/extensions/g
 4.  Push to the branch (`git push origin my-new-feature`)
 5.  Create new Pull Request
 
+## Contributors
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
+
 ## LICENSE
 
 MIT

@@ -33,3 +33,21 @@ Works on Amazon:
 1. Navigate to one of the supported Amazon sites.
 2. The extension is active by default - start searching!.
    1. Click the extension icon to disable it - the icon will then be greyed out.
+
+## Development
+
+Clone this repository and load this directory from Extension page. 
+see: [Load an unpacked extension](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world?hl=en#load-unpacked).
+
+## Contributing
+
+1.  Fork it
+2.  Create your feature branch (`git checkout -b my-new-feature`)
+3.  Commit your changes (`git commit -am 'Add some feature'`)
+4.  Push to the branch (`git push origin my-new-feature`)
+5.  Create new Pull Request
+
+## LICENSE
+
+MIT
+

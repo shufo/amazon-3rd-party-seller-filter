@@ -4,7 +4,7 @@ import { queryParams } from "./params.js";
 const status = new statusManager(true);
 const filterKey = "p_6";
 
-chrome.action.onClicked.addListener(function (tab) {
+chrome.action.onClicked.addListener((tab) => {
   status.changeStatus();
 
   if (status.getStatus()) {
@@ -31,7 +31,7 @@ chrome.action.onClicked.addListener(function (tab) {
   }
 });
 
-chrome.tabs.onUpdated.addListener(function (tabId, tab) {
+chrome.tabs.onUpdated.addListener((tabId, tab) => {
   if (status.getStatus()) {
     chrome.action.setIcon({ path: "../../icon/favicon-32x32_on.png" });
   } else {

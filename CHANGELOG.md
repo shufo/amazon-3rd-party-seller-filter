@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.2](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.1...v1.4.2) (2024-03-20)
+
+
+### Fixes
+
+* 🐛 search result unexpectedly filtered on Prime Video ([97bd576](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/97bd576eb8f02d7450537dbe77e0bc4189ae3f23))
+
+
+### Miscellaneous
+
+* 🤖 bump manifest version to 1.4.1 ([ff9fda4](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/ff9fda4e9edfa5f2d8a1de6b5eca82ea0d1ae541))
+
 ## [1.4.1](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.0...v1.4.1) (2024-01-23)
 
 

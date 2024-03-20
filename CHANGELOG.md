@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.3](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.2...v1.4.3) (2024-03-20)
+
+
+### Fixes
+
+* 🐛 search result unexpectedly filtered on amazon music ([e8ec886](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/e8ec886e8e254a7bc8fc53e42ae95102b176e603))
+
+
+### Miscellaneous
+
+* 🤖 bump manifest version ([699cab9](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/699cab980ec4e69914cc660766737aebe15eed69))
+* 🤖 bump version to 1.4.3 ([bf27408](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/bf2740823b09ac80de5961d3faac5ec01915254f))
+
 ## [1.4.2](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.1...v1.4.2) (2024-03-20)
 
 

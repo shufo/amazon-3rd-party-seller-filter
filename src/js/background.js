@@ -19,6 +19,11 @@ chrome.action.onClicked.addListener((tab) => {
   const filter = queryParams[url.hostname];
 
   if (status.getStatus()) {
+   
+    if (isPrimeVideo(url)) {
+      return;
+    }
+
     if (url.searchParams.has("k") && !url.searchParams.has("rh")) {
       url.searchParams.append("rh", `${filterKey}:${filter.value}`);
       chrome.tabs.update(tab.id, { url: url.toString() });
@@ -43,6 +48,10 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
   const url = new URL(tab.url);
   const filter = queryParams[url.hostname];
 
+  if (status.getStatus() && isPrimeVideo(url)) {
+    return;
+  }
+
   if (
     status.getStatus() &&
     url.searchParams.has("k") &&
@@ -52,3 +61,8 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
     chrome.tabs.update(tabId, { url: url.toString() });
   }
 });
+
+// Check if the current query is a prime video
+const isPrimeVideo = (url) => {
+  return url.searchParams.has("i") && url.searchParams.get("i") === "instant-video";
+}

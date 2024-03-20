@@ -1,5 +1,6 @@
 import statusManager from "./status.js";
 import { queryParams } from "./params.js";
+import { providedByAmazon } from "./category.js";
 
 const status = new statusManager(true);
 const filterKey = "p_6";
@@ -20,7 +21,7 @@ chrome.action.onClicked.addListener((tab) => {
 
   if (status.getStatus()) {
    
-    if (isPrimeVideo(url)) {
+    if (providedByAmazon(url)) {
       return;
     }
 
@@ -48,7 +49,7 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
   const url = new URL(tab.url);
   const filter = queryParams[url.hostname];
 
-  if (status.getStatus() && isPrimeVideo(url)) {
+  if (status.getStatus() && providedByAmazon(url)) {
     return;
   }
 
@@ -61,8 +62,3 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
     chrome.tabs.update(tabId, { url: url.toString() });
   }
 });
-
-// Check if the current query is a prime video
-const isPrimeVideo = (url) => {
-  return url.searchParams.has("i") && url.searchParams.get("i") === "instant-video";
-}

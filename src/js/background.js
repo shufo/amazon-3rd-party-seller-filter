@@ -15,8 +15,8 @@ chrome.action.onClicked.addListener((tab) => {
   if (tab.url === undefined) {
     return;
   }
-  let url = new URL(tab.url);
-  let filter = queryParams[url.hostname];
+  const url = new URL(tab.url);
+  const filter = queryParams[url.hostname];
 
   if (status.getStatus()) {
     if (url.searchParams.has("k") && !url.searchParams.has("rh")) {
@@ -40,8 +40,8 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
   if (tab.url === undefined) {
     return;
   }
-  let url = new URL(tab.url);
-  let filter = queryParams[url.hostname];
+  const url = new URL(tab.url);
+  const filter = queryParams[url.hostname];
 
   if (
     status.getStatus() &&

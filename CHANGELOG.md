@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.4](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.3...v1.4.4) (2024-12-07)
+
+
+### Fixes
+
+* 🐛 [#11](https://github.com/shufo/amazon-3rd-party-seller-filter/issues/11) persist extension state by local storage ([b67585b](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/b67585ba865fc78b1e4eeae49030a80017ee17e4))
+
+
+### Miscellaneous
+
+* 🤖 require storage permission ([7038b95](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/7038b954538bbb920b7dc99ef420552abdc1adfc))
+
 ## [1.4.3](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.2...v1.4.3) (2024-03-20)
 
 

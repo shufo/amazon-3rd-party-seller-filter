@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.4...v1.5.0) (2024-12-08)
+
+
+### Features
+
+* 🎸 set default title on icon hover ([e3392f8](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/e3392f88f4b4ece5ed9ad02ab62eae7689774df7))
+
 ## [1.4.4](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.3...v1.4.4) (2024-12-07)
 
 

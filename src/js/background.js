@@ -27,11 +27,14 @@ chrome.action.onClicked.addListener((tab) => {
           chrome.tabs.update(tab.id, { url: url.toString() });
         }
 
+        statusManager.enableIcon();
       } else {
         if (url.searchParams.has("k") && url.searchParams.has("rh")) {
           url.searchParams.delete("rh");
           chrome.tabs.update(tab.id, { url: url.toString() });
         }
+
+        statusManager.disableIcon();
       }
 
     });

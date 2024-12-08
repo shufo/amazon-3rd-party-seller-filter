@@ -33,12 +33,6 @@ class statusManager {
       chrome.storage.local.set({ "status": changesTo }, callback);
 
       console.log("Status changed to", changesTo);
-
-      if (changesTo) {
-        statusManager.enableIcon();
-      } else {
-        statusManager.disableIcon();
-      }
     });
   }
 

@@ -7,5 +7,8 @@
   },
   "appTitle": {
     "message": "Amazon 3rd party seller filter - Amazon発送の商品のみ表示"
+  },
+  "extensionTitle": {
+    "message": "Amazon 3rd party seller filter\nクリックで拡張機能の有効/無効を切り替え"
   }
 }

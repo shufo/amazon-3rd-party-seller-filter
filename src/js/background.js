@@ -5,6 +5,8 @@ import { providedByAmazon } from "./category.js";
 const status = new statusManager(true);
 const filterKey = "p_6";
 
+chrome.action.setTitle({ title: chrome.i18n.getMessage("extensionTitle") });
+
 // On click event for the extension icon
 chrome.action.onClicked.addListener((tab) => {
   status.changeStatus(() => {

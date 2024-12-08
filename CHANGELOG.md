@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.1](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.5.0...v1.5.1) (2024-12-08)
+
+
+### Fixes
+
+* 🐛 switch icon after parameter switched ([cb3db49](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/cb3db49ed646fb54d755b44045b7d5da21a868c6))
+
+
+### Miscellaneous
+
+* 🤖 bump manifest version ([a65f151](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/a65f151947e50b72c065daf93fbe4a6bdba32184))
+
 ## [1.5.0](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.4.4...v1.5.0) (2024-12-08)
 
 

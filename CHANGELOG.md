@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.5.2](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.5.1...v1.5.2) (2024-12-10)
+
+
+### Miscellaneous
+
+* 🤖 add Makefile ([e87adde](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/e87adde9aa25e48a9d161cc0b3014932cf046e60))
+* 🤖 add puppeteer and jest for end to end testing ([076fa13](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/076fa13f355bc87c223231a256e80ffa032a8977))
+* 🤖 bump manifest version ([57166f4](https://github.com/shufo/amazon-3rd-party-seller-filter/commit/57166f49548950f444d2c440612428dfdceb7b4d))
+
 ## [1.5.1](https://github.com/shufo/amazon-3rd-party-seller-filter/compare/v1.5.0...v1.5.1) (2024-12-08)
 
 

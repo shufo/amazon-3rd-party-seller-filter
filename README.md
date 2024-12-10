@@ -39,6 +39,12 @@ Works on Amazon:
 Clone this repository and load this directory from Extension page. 
 see: [Load an unpacked extension](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world?hl=en#load-unpacked).
 
+## Build
+
+```bash
+> make rebuild
+```
+
 ## Contributing
 
 1.  Fork it
@@ -46,6 +52,7 @@ see: [Load an unpacked extension](https://developer.chrome.com/docs/extensions/g
 3.  Commit your changes (`git commit -am 'Add some feature'`)
 4.  Push to the branch (`git push origin my-new-feature`)
 5.  Create new Pull Request
+3. Commit your changes (`git commit -am 'Add some feature'`)
 
 ## Contributors
 

@@ -8,48 +8,51 @@ const filterKey = "p_6";
 chrome.action.setTitle({ title: chrome.i18n.getMessage("extensionTitle") });
 
 // On click event for the extension icon
-chrome.action.onClicked.addListener((tab) => {
-  status.changeStatus(() => {
-    status.getStatus((result) => {
-      if (tab.url === undefined) {
+chrome.action.onClicked.addListener(async (tab) => {
+  try {
+    if (!tab.url) {
+      return;
+    }
+
+    const newStatus = await status.toggleStatus();
+    const url = new URL(tab.url);
+    const filter = queryParams[url.hostname];
+
+    if (!url.searchParams.has("k")) {
+      return;
+    }
+
+    if (newStatus) {
+      if (providedByAmazon(url)) {
         return;
       }
-      const url = new URL(tab.url);
-      const filter = queryParams[url.hostname];
 
-      if (result.status) {
-        if (providedByAmazon(url)) {
-          return;
-        }
-
-        if (url.searchParams.has("k") && !url.searchParams.has("rh")) {
-          url.searchParams.append("rh", `${filterKey}:${filter.value}`);
-          chrome.tabs.update(tab.id, { url: url.toString() });
-        }
-
-      } else {
-        if (url.searchParams.has("k") && url.searchParams.has("rh")) {
-          url.searchParams.delete("rh");
-          chrome.tabs.update(tab.id, { url: url.toString() });
-        }
+      if (!url.searchParams.has("rh")) {
+        url.searchParams.append("rh", `${filterKey}:${filter.value}`);
+        await chrome.tabs.update(tab.id, { url: url.toString() });
       }
-
-    });
-  });
+    } else {
+      if (url.searchParams.has("rh")) {
+        url.searchParams.delete("rh");
+        await chrome.tabs.update(tab.id, { url: url.toString() });
+      }
+    }
+  } catch (error) {
+    console.error('Error handling click:', error);
+  }
 });
 
 // On update event for the tab
-chrome.tabs.onUpdated.addListener((tabId, tab) => {
+chrome.tabs.onUpdated.addListener(async (tabId, tab) => {
   if (tab.status !== "loading") {
     return;
   }
 
-  // Get the current status of the extension
-  status.getStatus((result) => {
-    if (result.status) {
-      statusManager.enableIcon();
-
-      if (tab.url === undefined) {
+  try {
+    const currentStatus = await status.getStatus();
+    
+    if (currentStatus) {
+      if (!tab.url) {
         return;
       }
 
@@ -62,10 +65,10 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
 
       if (url.searchParams.has("k") && !url.searchParams.has("rh")) {
         url.searchParams.append("rh", `${filterKey}:${filter.value}`);
-        chrome.tabs.update(tabId, { url: url.toString() });
+        await chrome.tabs.update(tabId, { url: url.toString() });
       }
-    } else {
-      statusManager.disableIcon();
     }
-  });
+  } catch (error) {
+    console.error('Error handling tab update:', error);
+  }
 });

@@ -10,11 +10,12 @@ chrome.action.setTitle({ title: chrome.i18n.getMessage("extensionTitle") });
 // On click event for the extension icon
 chrome.action.onClicked.addListener(async (tab) => {
   try {
+    const newStatus = await status.toggleStatus();
+
     if (!tab.url) {
       return;
     }
 
-    const newStatus = await status.toggleStatus();
     const url = new URL(tab.url);
     const filter = queryParams[url.hostname];
 
